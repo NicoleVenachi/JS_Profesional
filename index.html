@@ -22,34 +22,7 @@
       <button>Play/Pause</button>
     </main>
 
-    <script type="text/javascript">
-      const video  = document.querySelector('video')
-      const button = document.querySelector('button')
-
-      function MediaPlayer(config) { //objeto de configuracion
-        this.media = config.el //el es la media del objeto
-      }
-      // MediaPlayer.prototype.isPaused = function() {
-      //   return this.media.paused
-      // } //Metodo para saber si el video esta pausado o detenido
-      MediaPlayer.prototype.play = function() {
-        this.media.play()
-      }  //metodo play al video
-      MediaPlayer.prototype.pause = function() {
-        this.media.pause()
-      } //metodo pause video
-      MediaPlayer.prototype.toggleVideo = function () {
-        if(this.media.paused) {
-          this.media.play()
-        } //si esta pausado, play
-        else {
-          this.media.pause()
-        }//si esta corriendo, pause
-      }
-
-      const player = new MediaPlayer({el: video})
-      //console.log(player.isPaused())
-      button.onclick = () => player.toggleVideo()  //metodo correr un HTML MediaElement
+    <script src="./assets/index.js" type="module">
 
     </script>
 
