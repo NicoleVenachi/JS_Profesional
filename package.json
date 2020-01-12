@@ -1,0 +1,16 @@
+{
+  "name": "Platzi-media-player",
+  "version": "1.0.0",
+  "description": "Proyecto del curso Profesional de JS de la escuela de JS en Platzi",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [
+    "platzi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
